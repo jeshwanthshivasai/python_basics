@@ -62,7 +62,7 @@ print("Languages:\nPython\nC\nJava")
 #combination of tab and newline
 print("Languages:\n\tPython\n\tJava\n\tC")
 ----------------------------------------------------------------
-Stripping whitespace
+#Stripping whitespace
 favourite_language = 'Python  1'
 print(favourite_language)
 
@@ -72,7 +72,7 @@ print(favourite_language)
 
 favourite_language = 'Java  1 2'
 favourite_language = favourite_language.rstrip()
-print(favourite_language)
+print(f avourite_language)
 
 favourite_language = ' 2 1 Java'
 favourite_language = favourite_language.lstrip()
@@ -87,7 +87,10 @@ nostarch_url = 'http://nostarch.com'
 simple_url = nostarch_url.removeprefix('http://')
 print(simple_url)
 ----------------------------------------------------------------
-Avoiding syntax errors w/ strings
+#Avoiding syntax errors w/ strings
 usage of single and double quotes in a correct format
 message = "One of Python's strengths is its diverse community."
 print(message)
+----------------------------------------------------------------
+#Numbers (INTEGERS)
+
