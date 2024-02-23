@@ -1,5 +1,9 @@
+#CHAPTER - ONE (GETTING STARTED)
+--------------------------------------------------------------
 #Running Python in the terminal session
 print("Hello Python Interpreter!")
+--------------------------------------------------------------
+#CHAPTER - TWO (VARIABLES & SIMPLE DATATYPES)
 --------------------------------------------------------------
 #Variables
 message = "Hello Python World!"
@@ -88,9 +92,55 @@ simple_url = nostarch_url.removeprefix('http://')
 print(simple_url)
 ----------------------------------------------------------------
 #Avoiding syntax errors w/ strings
-usage of single and double quotes in a correct format
+#usage of single and double quotes in a correct format
 message = "One of Python's strengths is its diverse community."
 print(message)
 ----------------------------------------------------------------
-#Numbers (INTEGERS)
-
+#Numbers
+#(INTEGERS: +, -, *, /)
+print(4+2)
+print(4-2)
+print(4*2)
+print(4/2)
+#two_symbols_to_represent_exponents
+print(3**2)
+print(3**10)
+#usage_of_multiple_operators
+print(2+3*4)
+print((2+3)*4)
+#(FLOATS)
+print(0.1+0.1)
+print(0.2+0.2)
+print(2*0.1)
+print(2*0.2)
+print(0.2+0.1)
+print(0.3+0.1)
+#INTEGERS_AND_FLOATS
+#divide_two_numbers = float
+print(4/2)
+#mix_integer_and_float = float
+print(1+2.0)
+print(2*2.0)
+print(3.0**3)
+#underscores
+mymemory=1_00_00_00_00_00_00_00_00_00_00_00_00_00_000
+print(mymemory)
+#multiple_assignment
+x, y, z = 0, 1, 2
+print(x)
+print(y)
+print(z)
+#constants
+#uppercase_to_indicate_variable_to_treat_as_a_constant
+MY_AGE = 25
+print(MY_AGE)
+----------------------------------------------------------------
+#Comments
+#say hello world
+print("Hello world!")
+----------------------------------------------------------------
+#Zen_of_Python
+import  this
+----------------------------------------------------------------
+#CHAPTER - THREE (INTRODUCING LISTS)
+----------------------------------------------------------------
