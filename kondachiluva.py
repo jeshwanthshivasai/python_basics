@@ -167,7 +167,7 @@
 # ----------------------------------------------------------------
 # #using individual values from a list
 # vegetables = ['beetroot', 'capsicum', 'carrot', 'ridgegourd']
-# message = f"My Favorite Vegetable is {vegetables[1].title()}!."
+# message = f"My Favorite Vegetable is {vegetables[1].title()}."
 # print(message)
 # ----------------------------------------------------------------
 # #Modifying, Adding and removing elements
@@ -191,7 +191,51 @@
 # vegetables.append('ridgegourd')
 # print(vegetables)
 
- # #inserting elements into a list
-vegetables = ['beetroot', 'capsicum', 'carrot', 'ridgegourd']
-vegetables.insert(0, 'cauliflower')
-print(vegetables)
+# #inserting elements into a list
+# vegetables = ['beetroot', 'capsicum', 'carrot', 'ridgegourd']
+# vegetables.insert(0, 'cauliflower')
+# print(vegetables)
+# ----------------------------------------------------------------
+# #Removing elements from a list
+# #removing an item using the DEL statement
+# vegetables = ['beetroot', 'capsicum', 'carrot', 'ridgegourd']
+# print(vegetables)
+# del vegetables[2]
+# print(vegetables)
+
+# #removing an item using the pop() method
+# vegetables = ['beetroot', 'capsicum', 'carrot', 'ridgegourd']
+# print(vegetables)
+# popveg = vegetables.pop()
+# print(vegetables)
+# print(popveg)
+
+# vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
+# notvegetable = vegetables.pop()
+# print(f"Very hard texture and it is {notvegetable.title()}.")
+# ----------------------------------------------------------------
+# #popping items from any position in a list
+# vegetables = ['beetroot', 'capsicum', 'carrot', 'ridgegourd']
+# print(vegetables)
+# popveg = vegetables.pop(2)
+# print(vegetables)
+# print(popveg)
+
+# vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
+# notvegetable = vegetables.pop(2)
+# print(f"Very hard texture and it is {notvegetable.title()}.")
+# ----------------------------------------------------------------
+# #Removing an item by value
+# vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
+# print(vegetables)
+# vegetables.remove('tomato')
+# print(vegetables)
+
+# vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
+# print(vegetables)
+# notvegetables = 'tomato'
+# vegetables.remove(notvegetables)
+# print(vegetables)
+# print(f"Since {notvegetables.title()} is a fruit.")
+# ----------------------------------------------------------------
+# #Organizing a list
