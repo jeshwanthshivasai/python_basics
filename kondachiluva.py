@@ -67,7 +67,7 @@
 
 # favourite_language = 'Java  1 2'
 # favourite_language = favourite_language.rstrip()
-# print(f avourite_language)
+# print(favourite_language)
 
 # favourite_language = ' 2 1 Java'
 # favourite_language = favourite_language.lstrip()
@@ -239,3 +239,37 @@
 # print(f"Since {notvegetables.title()} is a fruit.")
 # ----------------------------------------------------------------
 # #Organizing a list
+# #sorting a list "permanently" with the "sort()" method
+# #alphabetical order
+# vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
+# vegetables.sort()
+# print(vegetables)
+
+# #reverse alphabetical order
+# vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
+# vegetables.sort(reverse=True)
+# print(vegetables)
+# ----------------------------------------------------------------
+# #sorting a list "temporarily" with the "sorted()" method
+# #alphabetical order
+# vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
+# print(sorted(vegetables))
+
+# #reverse alphabetical order
+# vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
+# vegetables.sort(reverse=True)
+# print(vegetables)
+# ----------------------------------------------------------------
+# #printing a list in reverse order
+# vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
+# vegetables.reverse()
+# print(vegetables)
+# ----------------------------------------------------------------
+# #finding the length of a list
+# vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
+# print(len(vegetables))
+# ----------------------------------------------------------------
+# #Avoiding index errors when working with lists
+#wantedly making mistakes (3 items but asking for 4th index)
+# vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
+# print(vegetables[4])
