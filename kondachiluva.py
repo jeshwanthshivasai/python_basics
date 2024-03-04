@@ -273,3 +273,25 @@
 #wantedly making mistakes (3 items but asking for 4th index)
 # vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
 # print(vegetables[4])
+# ---------------------------------------------------------------------------------------------------------------
+# #CHAPTER - FOUR (WORKING WITH LISTS)
+# ---------------------------------------------------------------------------------------------------------------
+# #Looping through an entire list
+# vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
+# for veg in vegetables:
+#     print(veg)
+#----------------------------------------------------------------
+# #Doing more work within a loop
+# friends = ['idioteye', 'kc', 'schola', 'ramya']
+# for dosth in friends:
+#     print(f"{dosth.title()}, nuv evaro nak telvadu")
+#     print(f"evarra meerantha, {dosth.title()} \n")
+#----------------------------------------------------------------
+# #Doing something after a for loop
+# friends = ['idioteye', 'kc', 'schola', 'ramya']
+# for dosth in friends:
+#     print(f"{dosth.title()}, nuv evaro nak telvadu")
+#     print(f"evarra meerantha, {dosth.title()} \n")
+# print("Dandam ra andarki")
+#----------------------------------------------------------------
+# #Making numerical lists
