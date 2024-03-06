@@ -295,3 +295,43 @@
 # print("Dandam ra andarki")
 #----------------------------------------------------------------
 # #Making numerical lists
+# #using range() function
+# for value in range(1,11):
+#     print(value)
+
+# #using range() to make a "LIST OF NUMBERS"
+# numbers = list(range(1,11))
+# print(numbers)
+
+# #print only even numbers
+# numbers = list(range(0,11,2))
+# print(numbers)
+
+# #print sqrs of numbers
+# sqrs = [] #take an empty list
+# for x in range(1,11): #let x be the number
+#     square = x**2 #x i.e number to the power 2 therfore resulting in a square
+#     sqrs.append(square) #appending the numbers to the sqrs list
+
+# print(sqrs) #print the list
+
+# #OR (LIST COMPREHENSION METHOD)
+
+# sqrs = [x**2 for x in range(1,11)]
+# print(sqrs)
+
+# #OR
+
+# sqrs = []
+# for value in range(1,11):
+#     sqrs.append(value**2)
+# print(sqrs)
+
+# # simple statistics with a list of numbers
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+# min(numbers)
+# print(min(numbers))
+
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+# max(numbers)
+# print(max(numbers))
