@@ -310,8 +310,8 @@
 # #print sqrs of numbers
 # sqrs = [] #take an empty list
 # for x in range(1,11): #let x be the number
-#     square = x**2 #x i.e number to the power 2 therfore resulting in a square
-#     sqrs.append(square) #appending the numbers to the sqrs list
+#     square = x**2 #x i.e num to the pow 2 resulting in a sq
+#     sqrs.append(square) #appending the nums to the sqrs list
 
 # print(sqrs) #print the list
 
@@ -334,4 +334,57 @@
 
 # numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 # max(numbers)
-# print(max(numbers))
+# print(max(numbers))\
+#----------------------------------------------------------------
+# #Working with part of a list
+# #slicing a list
+# friends = ['ajey', 'kc', 'schola', 'ramya', 'selwyn']
+# print(friends[0:3])
+# #beginning of list (output from start to the given no.)
+# print(friends[:4])
+# #ending of a list (output from the given no. to end)
+# print(friends[4:])
+# #negative index (output only last elements of given no.)
+# print(friends[-4:])
+
+# #looping through a list
+# friends = ['ajey', 'kc', 'schola', 'ramya', 'selwyn']
+# print("First 3 friends :")
+# for friend in friends[0:3]:
+#     print(friend)
+
+# #copying through a list
+# myfav = ['pizza', 'cake', 'biryani', 'haleem', 'rasmalai']
+# friend_fav = myfav[:]
+# print("My fav first :")
+# print(myfav)
+# print("\nMy friends fav are :")
+# print(friend_fav)
+
+# #add new item to list
+# myfav.append('pappu')
+# print(myfav)
+# friend_fav.append('avakay')
+# print(friend_fav)
+#----------------------------------------------------------------
+# #Tuples
+# #defining a tuple
+# numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
+# print('The first 11 positive integers are :', numbers)
+# print(numbers)
+
+# #looping through all values in a tuple
+# numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
+# for number in numbers:
+#     print(number)
+
+# #writing over a tuple
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
+print('The first 11 negative integers are :', numbers)
+for number in numbers:
+    print(number)
+
+numbers = (11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1)
+print('\nThe first 11 negative integers in reverse are :', numbers)
+for number in numbers:
+    print(number)
