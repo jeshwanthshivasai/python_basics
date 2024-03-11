@@ -379,12 +379,45 @@
 #     print(number)
 
 # #writing over a tuple
-numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
-print('The first 11 negative integers are :', numbers)
-for number in numbers:
-    print(number)
+# numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
+# print('The first 11 negative integers are :', numbers)
+# for number in numbers:
+#     print(number)
 
-numbers = (11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1)
-print('\nThe first 11 negative integers in reverse are :', numbers)
-for number in numbers:
-    print(number)
+# numbers = (11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1)
+# print('\nThe first 11 negative integers in reverse are :', numbers)
+# for number in numbers:
+#     print(number)
+# ---------------------------------------------------------------------------------------------------------------
+# #CHAPTER - FIVE ()
+# ---------------------------------------------------------------------------------------------------------------
+# #A simple example
+# fav = ['michael_jackson', 'odesza', 'dyalla', 'spb']
+# for musician in fav:
+#     if musician == 'odesza':
+#         print(musician.upper())
+#     else:
+#         print(musician.title())
+
+# #Conditional tests
+# #checking for equality
+# name = 'jesh'
+# name == 'jesh'
+# print(name)
+
+# #Ignoring case when checking for equality
+# name = 'jesh'
+# name.upper() == 'Jesh'
+# print(name)
+
+# #checking for inequality
+username = 'jeshwanthshivasai'
+if username != 'jeshwanthss':
+    print("Wrong username!")
+
+# #Numerical comparisons
+number = 11
+if number != 9:
+    print("Wrong number!")
+
+# #Checking multiple conditions
