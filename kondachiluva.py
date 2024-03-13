@@ -385,11 +385,11 @@
 #     print(number)
 
 # numbers = (11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1)
-# print('\nThe first 11 negative integers in reverse are :', numbers)
+# print('\nNegative integers in reverse are :', numbers)
 # for number in numbers:
 #     print(number)
 # ---------------------------------------------------------------------------------------------------------------
-# #CHAPTER - FIVE ()
+# #CHAPTER - FIVE (IF STATEMENTS)
 # ---------------------------------------------------------------------------------------------------------------
 # #A simple example
 # fav = ['michael_jackson', 'odesza', 'dyalla', 'spb']
@@ -400,24 +400,120 @@
 #         print(musician.title())
 
 # #Conditional tests
-# #checking for equality
+# #Checking for equality
 # name = 'jesh'
-# name == 'jesh'
-# print(name)
+# print(name == 'jesh')
 
 # #Ignoring case when checking for equality
 # name = 'jesh'
-# name.upper() == 'Jesh'
-# print(name)
+# print(name.upper() == 'Jesh')
 
-# #checking for inequality
-username = 'jeshwanthshivasai'
-if username != 'jeshwanthss':
-    print("Wrong username!")
+# #Checking for inequality
+# username = 'jeshwanthshivasai'
+# if username != 'jeshwanthss':
+#     print("Wrong username!")
 
 # #Numerical comparisons
-number = 11
-if number != 9:
-    print("Wrong number!")
+# number = 11
+# if number != 9:
+#     print("Wrong number!")
 
 # #Checking multiple conditions
+# #Using "and" to check multiple conditions
+# age1 = 18
+# age2 = 20
+# print((age1 >= 20) and (age2 >= 20))
+
+# #Using "or" to check multiple conditions
+# age1 = 18
+# age2 = 20
+# print((age1 <= 20) or (age2 <= 20))
+
+# #Checking whether a value is in a List
+# fav = ['michael_jackson', 'odesza', 'dyalla', 'spb']
+# print('odesza' in fav)
+
+# #Checking whether a value is not in a List
+# fav = ['michael_jackson', 'odesza', 'dyalla', 'spb']
+# singer = 'odesza'
+# if singer not in fav:
+#     print(f"{singer.title()} will be added to the list.")
+#----------------------------------------------------------------
+# #if Statements
+# #Simple if statements
+# age = 25
+# if age > 18:
+#     print('You are an adult')
+
+# #if-else statements
+# spot
+
+# #if-elif-else chain
+# age = 30
+# if (age >= 18) and (age <= 25):
+#     print('You are an adult')
+# elif age < 18:
+#     print('You are a kid')
+# else:
+#     print('You are a man')
+
+# #Using mutliple elif blocks
+# age = 60
+# if (age >= 18) and (age <= 25):
+#     print('You are an adult')
+# elif age < 18:
+#     print('You are a kid')
+# elif (age >= 30) and (age <= 50):
+#     print('You are in your mids')
+# elif (age >= 50) and (age <= 80):
+#     print('You are in your old-age')
+# else:
+#     print('You are a man')
+
+# #Omitting the else block
+# age = 25
+# if (age >= 18) and (age <= 25):
+#     print('You are a man')
+# elif age < 18:
+#     print('You are a kid')
+# elif (age >= 30) and (age <= 50):
+#     print('You are in your mids')
+# elif (age >= 50) and (age <= 80):
+#     print('You are in your old-age')
+
+# #Testing mutiple conditions
+# account = ['username', 'password', 'number']
+# if 'username' in account:
+#     print('Added username')
+# if 'password' in account:
+#     print('Added password')
+# if 'number' in account:
+#     print('Added number')
+#----------------------------------------------------------------
+# #Using if statements with Lists
+# #Checking for special items
+# account = ['username', 'password', 'number']
+# for info in account:
+#     print(f"Added{info}")
+# print("\nCongratulations your account has been created")
+
+# account = ['username', 'password', 'number']
+# for info in account:
+#     if info == 'username':
+#         print(f"Cant add username")
+#     else:
+#         print(f"Adding {info}")
+# print("\nCongratulations your account has been created")
+
+# #Using Multiple lists
+# account = ['username', 'password', 'number', 'email', 'tfa', 'address']
+# mandatory = ['email', 'username', 'password', 'tfa']
+# for info in mandatory:
+#     if info in account:
+#         print(f"Added {info}")
+#     else:
+#         print(f"Not needed {info}")
+# print("\nCongratulations your account has been created")
+# ---------------------------------------------------------------------------------------------------------------
+# #CHAPTER - SIX (DICTIONARIES)
+# ---------------------------------------------------------------------------------------------------------------
