@@ -15,7 +15,7 @@
 
 # message = "Hello Python Crash Course World!"
 # print(message)
-# --------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''Strings'''
 '''changing case in a string with methods'''
 # name = "jeshwanth shiva sai"
@@ -28,7 +28,7 @@
 '''lower method'''
 # name = "jeshwanth shiva sai"
 # print(name.lower())
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''Using Variable in Strings'''
 # firstname = "Jeshwanth"
 # middlename = "Shiva"
@@ -46,7 +46,7 @@
 # fullname = f"{firstname} {lastname}"
 # message = f"Hello, {fullname.title()}!"
 # print(message)
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''Add Whitespace to Strings with tabs or newlines'''
 '''Add tab to text'''
 # print("\tPython")
@@ -56,7 +56,7 @@
 
 '''combination of tab and newline'''
 # print("Languages:\n\tPython\n\tJava\n\tC")
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''Stripping whitespace'''
 # favourite_language = 'Python  1'
 # print(favourite_language)
@@ -76,17 +76,17 @@
 # favourite_language = ' 2 1 Java  1 2'
 # favourite_language = favourite_language.strip()
 # print(favourite_language)
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''Removing prefixes'''
 # nostarch_url = 'http://nostarch.com'
 # simple_url = nostarch_url.removeprefix('http://')
 # print(simple_url)
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''Avoiding syntax errors w/ strings'''
 '''usage of single and double quotes in a correct format'''
 # message = "One of Python's strengths is its diverse community."
 # print(message)
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''Numbers'''
 '''(Integers: +, -, *, /)'''
 # print(4+2)
@@ -101,7 +101,7 @@
 '''usage of multiple operators'''
 # print(2+3*4)
 # print((2+3)*4)
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''floats'''
 # print(0.1+0.1)
 # print(0.2+0.2)
@@ -109,7 +109,7 @@
 # print(2*0.2)
 # print(0.2+0.1)
 # print(0.3+0.1)
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''Integers and floats'''
 '''divide_two_numbers = float'''
 # print(4/2)
@@ -117,26 +117,26 @@
 print(1+2.0)
 print(2*2.0)
 print(3.0**3)
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''Underscores in numbers'''
 # mymemory=1_00_00_00_00_00_00_00_00_00_00_00_00_00_000
 # print(mymemory)
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''Multiple_assignment'''
 # x, y, z = 0, 1, 2
 # print(x)
 # print(y)
 # print(z)
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''Constants'''
 '''uppercase_to_indicate_variable_to_treat_as_a_constant'''
 # MY_AGE = 25
 # print(MY_AGE)
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''Comments'''
 '''say hello world'''
 # print("Hello world!")
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''Zen of Python'''
 # import  this
 # ---------------------------------------------------------------------------------------------------------------
@@ -144,14 +144,14 @@ print(3.0**3)
 # ---------------------------------------------------------------------------------------------------------------
 # vegetables = ['beetroot', 'capsicum', 'carrot', 'ridgegourd']
 # print(vegetables)
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''accessing elements in the list'''
 # vegetables = ['beetroot', 'capsicum', 'carrot', 'ridgegourd']
 # print(vegetables[1])
 
 '''more presentable format'''
 # print(vegetables[1].title())
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''index starts at 0 and not 1'''
 # vegetables = ['beetroot', 'capsicum', 'carrot', 'ridgegourd']
 # print(vegetables[1])
@@ -164,19 +164,19 @@ print(3.0**3)
 '''(for second last item in the list and so on and so forth)'''
 # vegetables = ['beetroot', 'capsicum', 'carrot', 'ridgegourd']
 # print(vegetables[-2])
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''using individual values from a list'''
 # vegetables = ['beetroot', 'capsicum', 'carrot', 'ridgegourd']
 # message = f"My Favorite Vegetable is {vegetables[1].title()}."
 # print(message)
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''Modifying, Adding and removing elements'''
 '''modifying elements in a list'''
 # vegetables = ['beetroot', 'capsicum', 'carrot', 'ridgegourd']
 # print(vegetables)
 # vegetables[3] = "bottlegourd"
 # print(vegetables)
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''Adding elements to a list'''
 '''appending elements to the end of a list'''
 # vegetables = ['beetroot', 'capsicum', 'carrot', 'ridgegourd']
@@ -195,7 +195,7 @@ print(3.0**3)
 # vegetables = ['beetroot', 'capsicum', 'carrot', 'ridgegourd']
 # vegetables.insert(0, 'cauliflower')
 # print(vegetables)
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''Removing elements from a list'''
 '''removing an item using the DEL statement'''
 # vegetables = ['beetroot', 'capsicum', 'carrot', 'ridgegourd']
@@ -213,7 +213,7 @@ print(3.0**3)
 # vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
 # notvegetable = vegetables.pop()
 # print(f"Very hard texture and it is {notvegetable.title()}.")
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''popping items from any position in a list'''
 # vegetables = ['beetroot', 'capsicum', 'carrot', 'ridgegourd']
 # print(vegetables)
@@ -224,7 +224,7 @@ print(3.0**3)
 # vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
 # notvegetable = vegetables.pop(2)
 # print(f"Very hard texture and it is {notvegetable.title()}.")
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''Removing an item by value'''
 # vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
 # print(vegetables)
@@ -237,7 +237,7 @@ print(3.0**3)
 # vegetables.remove(notvegetables)
 # print(vegetables)
 # print(f"Since {notvegetables.title()} is a fruit.")
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''Organizing a list'''
 '''sorting a list "permanently" with the "sort()" method'''
 '''alphabetical order'''
@@ -249,7 +249,7 @@ print(3.0**3)
 # vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
 # vegetables.sort(reverse=True)
 # print(vegetables)
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''sorting a list "temporarily" with the "sorted()" method'''
 '''alphabetical order'''
 # vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
@@ -259,16 +259,16 @@ print(3.0**3)
 # vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
 # vegetables.sort(reverse=True)
 # print(vegetables)
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''printing a list in reverse order'''
 # vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
 # vegetables.reverse()
 # print(vegetables)
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''finding the length of a list'''
 # vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
 # print(len(vegetables))
-# ----------------------------------------------------------------
+# -------------------------------------------------------------------------------
 '''Avoiding index errors when working with lists'''
 '''wantedly making mistakes (3 items but asking for 4th index)'''
 # vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
@@ -280,26 +280,26 @@ print(3.0**3)
 # vegetables = ['beetroot', 'capsicum', 'tomato', 'ridgegourd']
 # for veg in vegetables:
 #     print(veg)
-#----------------------------------------------------------------
+#--------------------------------------------------------------------------------
 '''Doing more work within a loop'''
 # friends = ['idioteye', 'kc', 'schola', 'ramya']
 # for dosth in friends:
 #     print(f"{dosth.title()}, nuv evaro nak telvadu")
 #     print(f"evarra meerantha, {dosth.title()} \n")
-#----------------------------------------------------------------
+#--------------------------------------------------------------------------------
 '''Doing something after a for loop'''
 # friends = ['idioteye', 'kc', 'schola', 'ramya']
 # for dosth in friends:
 #     print(f"{dosth.title()}, nuv evaro nak telvadu")
 #     print(f"evarra meerantha, {dosth.title()} \n")
 # print("Dandam ra andarki")
-#----------------------------------------------------------------
+#--------------------------------------------------------------------------------
 '''Making numerical lists'''
 '''using range() function'''
 # for value in range(1,11):
 #     print(value)
 
-'''using range() to make a "LIST OF NUMBERS'''"
+'''using range() to make a "LIST OF NUMBERS'''
 # numbers = list(range(1,11))
 # print(numbers)
 
@@ -335,7 +335,7 @@ print(3.0**3)
 # numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 # max(numbers)
 # print(max(numbers))\
-#----------------------------------------------------------------
+#--------------------------------------------------------------------------------
 '''Working with part of a list'''
 '''slicing a list'''
 # friends = ['ajey', 'kc', 'schola', 'ramya', 'selwyn']
@@ -366,7 +366,7 @@ print(3.0**3)
 # print(myfav)
 # friend_fav.append('avakay')
 # print(friend_fav)
-#----------------------------------------------------------------
+#--------------------------------------------------------------------------------
 '''Tuples'''
 '''defining a tuple'''
 # numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
@@ -438,7 +438,7 @@ print(3.0**3)
 # singer = 'odesza'
 # if singer not in fav:
 #     print(f"{singer.title()} will be added to the list.")
-#----------------------------------------------------------------
+#--------------------------------------------------------------------------------
 '''if Statements'''
 '''Simple if statements'''
 # age = 25
@@ -489,7 +489,7 @@ print(3.0**3)
 #     print('Added password')
 # if 'number' in account:
 #     print('Added number')
-#----------------------------------------------------------------
+#--------------------------------------------------------------------------------
 '''Using if statements with Lists'''
 '''Checking for special items'''
 # account = ['username', 'password', 'number']
@@ -523,7 +523,7 @@ print(3.0**3)
 # print(alien_0['points'])
 
 '''Working with Dictionaries'''
-# #Accessing values in a dictionary
+'''Accessing values in a dictionary'''
 # alien_0 = {'color': 'green', 'points': 5}
 # newpoint = alien_0['points']
 # print(f"You've scored {newpoint} points!")
@@ -576,7 +576,7 @@ print(3.0**3)
 # language = pglang['jess'].title()
 # print(f"Jess's fav. language is {language}.")
 
-# #using get() to access values
+'''using get() to access values'''
 # alien_0 = {'color' : 'green', 'speed' : 'slow'}
 # # print(alien_0['points'])
 # point_value = alien_0.get('points', 'No point value assigned.')
