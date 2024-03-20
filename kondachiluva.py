@@ -521,7 +521,7 @@ print(3.0**3)
 # alien_0 = {'color': 'green', 'points': 5}
 # print(alien_0['color'])
 # print(alien_0['points'])
-
+#--------------------------------------------------------------------------------
 '''Working with Dictionaries'''
 '''Accessing values in a dictionary'''
 # alien_0 = {'color': 'green', 'points': 5}
@@ -570,8 +570,8 @@ print(3.0**3)
 # pglang = {
 #     'jess' : 'Python',
 #     'yogi' : 'Java',
-#     'KC' : 'C',
-#     'Sathwik' : 'JavaScript',
+#     'kc' : 'C',
+#     'sathwik' : 'JavaScript',
 # }
 # language = pglang['jess'].title()
 # print(f"Jess's fav. language is {language}.")
@@ -580,7 +580,77 @@ print(3.0**3)
 # alien_0 = {'color' : 'green', 'speed' : 'slow'}
 # # print(alien_0['points'])
 # point_value = alien_0.get('points', 'No point value assigned.')
-'''if the second arg is left in the call to get() and the key doesnt exist,
-python will retrun the value None. The special value None means "no value exists".
-This is not an error: It's a special value meant to indicate the absence of a value)'''
+'''if the second arg is left in the call to get() and 
+the key doesnt exist, python will retrun the value None.
+The special value None means "no value exists". This is not an error: 
+It's a special value meant to indicate the absence of a value)'''
 # print(point_value)
+#--------------------------------------------------------------------------------
+'''Looping through a Dictionary'''
+'''looping through all "KEY-VALUE" pairs'''
+# user = {
+#     'username' : 'jess',
+#     'password' : '143qwerty',
+#     'number' : 9381288684,
+# }
+# for key, value in user.items():
+#     print(f"\nThe key is {key}.")
+#     print(f"The value is {value}.")
+
+'''AND'''
+
+# pglang = {
+#     'jess' : 'Python',
+#     'yogi' : 'Java',
+#     'kc' : 'C',
+#     'sathwik' : 'JavaScript',
+# }
+# for name, lang in pglang.items():
+#     print(f"\n{name.title()}'s Fav Lang is {lang.title()}.")
+
+'''looping through all the "KEYS" in a dictionary'''
+# pglang = {
+#     'jess' : 'Python',
+#     'yogi' : 'Java',
+#     'kc' : 'C',
+#     'sathwik' : 'JavaScript',
+# }
+# names = ['jess', 'yogi']
+# for name in pglang:
+#     print(f"Hey! Yo! {name.title()}")
+
+#     if name in names:
+#         language = pglang[name].title()
+#         print(f"\t{name.title()}, how good are you at {language}")
+
+'''looping through a dictionary's "KEYS" in a particular order'''
+# pglang = {
+#     'jess' : 'Python',
+#     'yogi' : 'Java',
+#     'kc' : 'C',
+#     'sathwik' : 'JavaScript',
+# }
+# for name in sorted (pglang):
+#     print(f"{name.title()}, Chadukondra rey!.")
+
+'''looping through all "VALUES" in a dictionary'''
+# pglang = {
+#     'jess' : 'Python',
+#     'yogi' : 'Java',
+#     'kc' : 'C',
+#     'sathwik' : 'JavaScript',
+# }
+# for language in pglang.values():
+#     print(f"{language.title()}")
+
+'''AND'''
+
+pglang = {
+    'jess' : 'Python',
+    'yogi' : 'Java',
+    'kc' : 'C',
+    'sathwik' : 'JavaScript',
+}
+for language in set(pglang.values()):
+    print(language.title())
+
