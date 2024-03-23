@@ -645,12 +645,84 @@ It's a special value meant to indicate the absence of a value)'''
 
 '''AND'''
 
-pglang = {
-    'jess' : 'Python',
-    'yogi' : 'Java',
-    'kc' : 'C',
-    'sathwik' : 'JavaScript',
-}
-for language in set(pglang.values()):
-    print(language.title())
+# pglang = {
+#     'jess' : 'Python',
+#     'yogi' : 'Java',
+#     'kc' : 'C',
+#     'sathwik' : 'JavaScript',
+# }
+# for language in set(pglang.values()):
+#     print(language.title())
+#--------------------------------------------------------------------------------
+'''Nesting'''
+'''A list of Dictionaries'''
+# alien_0 = {'color': 'green', 'points': 5}
+# alien_1 = {'color': 'yellow', 'points': 6}
+# alien_2 = {'color' : 'blue', 'points': 7}
+# aliens = [alien_0, alien_1, alien_2]
+# for alien in aliens:
+#     print(alien)
 
+'''game'''
+# aliens = []
+# for alien in range (30):
+#     newalien = {'color': 'green', 'points': 5, 'speed': 'medium'}
+#     aliens.append(newalien)
+# for alien in aliens[:3]:
+#     if alien['color'] == 'green':
+#         alien['color'] = 'yellow'
+#         alien['speed'] = 'medium'
+#         alien['points'] = 10
+#     elif alien['color'] == 'yellow':
+#         alien['color'] = 'red'
+#         alien['speed'] = 'fast'
+#         alien['points'] = 15
+# for alien in aliens[:5]:
+#     print(alien)
+
+'''A list in a dictionary'''
+'''EXAMPLE - 1'''
+# pizza = {
+#     'crust' : 'thick',
+#     'toppings' : ['mushroom', 'pepper'],
+# }
+# print(f"You ordered a {pizza['crust']}-crust pizza with the following toppings - ")
+# for toppings in pizza['toppings']:
+#     print(f"\t{toppings}")
+
+'''EXAMPLE - 2'''
+
+# pglang = {
+#     'jess' : ['python', 'java'],
+#     'yogi' : ['c'],
+#     'suhas' : ['rust', 'go'],
+#     'rohan' : ['python', 'powerbi'],
+# }
+# for name, language in pglang.items():
+#     print(f"\n{name.title()}'s knows these languages:")
+#     for lang in language:
+#         print(f"\t{lang.title()}")
+
+'''A dictionary in a dictionary'''
+users = {
+    'jss' : {
+        'fname' : 'jess',
+        'username' : 'jeshwanthshivasai',
+        'location' : 'hyderabad'
+    },
+    'yogi' : {
+        'fname' : 'yogitha',
+        'username' : 'chyogitha',
+        'location' : 'finland',
+    },
+}
+for user, info in users.items():
+    print(f"\nUsername : {user}")
+    fullname = f"{info['fname']} {info['username']}"
+    location = info['location']
+
+    print(f"\tFullname : {fullname.title()}")
+    print(f"\tLocation : {location.title()}")
+# ---------------------------------------------------------------------------------------------------------------
+'''CHAPTER - SEVEN (USER INPUT AND WHILE LOOPS)'''
+# ---------------------------------------------------------------------------------------------------------------
