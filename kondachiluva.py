@@ -704,25 +704,25 @@ It's a special value meant to indicate the absence of a value)'''
 #         print(f"\t{lang.title()}")
 
 '''A dictionary in a dictionary'''
-users = {
-    'jss' : {
-        'fname' : 'jess',
-        'username' : 'jeshwanthshivasai',
-        'location' : 'hyderabad'
-    },
-    'yogi' : {
-        'fname' : 'yogitha',
-        'username' : 'chyogitha',
-        'location' : 'finland',
-    },
-}
-for user, info in users.items():
-    print(f"\nUsername : {user}")
-    fullname = f"{info['fname']} {info['username']}"
-    location = info['location']
+# users = {
+#     'jss' : {
+#         'fname' : 'jess',
+#         'username' : 'jeshwanthshivasai',
+#         'location' : 'hyderabad'
+#     },
+#     'yogi' : {
+#         'fname' : 'yogitha',
+#         'username' : 'chyogitha',
+#         'location' : 'finland',
+#     },
+# }
+# for user, info in users.items():
+#     print(f"\nUsername : {user}")
+#     fullname = f"{info['fname']} {info['username']}"
+#     location = info['location']
 
-    print(f"\tFullname : {fullname.title()}")
-    print(f"\tLocation : {location.title()}")
+#     print(f"\tFullname : {fullname.title()}")
+#     print(f"\tLocation : {location.title()}")
 # ---------------------------------------------------------------------------------------------------------------
 '''CHAPTER - SEVEN (USER INPUT AND WHILE LOOPS)'''
 # ---------------------------------------------------------------------------------------------------------------
