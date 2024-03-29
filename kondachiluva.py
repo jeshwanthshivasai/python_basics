@@ -726,4 +726,39 @@ It's a special value meant to indicate the absence of a value)'''
 # ---------------------------------------------------------------------------------------------------------------
 '''CHAPTER - SEVEN (USER INPUT AND WHILE LOOPS)'''
 # ---------------------------------------------------------------------------------------------------------------
-#how the input() Function works
+'''how the input() Function works'''
+# message = input("whom are you telling hello?")
+# print(message)
+
+'''writing clear prompts'''
+# message = "vadiki peru rayamani chepu"
+# message += "\nninne ra rey peru rayamai cheptunaru"
+# name = input(message)
+# print(f"\nHello, {name.title()}")
+
+'''using int() to accept numerical input'''
+# age = input("age please? :")
+# age = int(age)
+# print(age >= 18)
+
+'''AND'''
+
+# age = input("age please? :")
+# age = int(age)
+
+# if age >= 18:
+#     print("\nYou are old enough to vote.")
+# else:
+#     print("\nGotta become an elder kid.")
+#--------------------------------------------------------------------------------
+'''The Modulo Operator'''
+# number = input("number kottu nuvu, i'll tell you whether its even or odd.")
+# number = int(number)
+
+# if number%2  == 0:
+#     print("\nThe number is even")
+# else:
+#     print("\nThe number is odd")
+#--------------------------------------------------------------------------------
+'''Introducing While Loops'''
+''''''
