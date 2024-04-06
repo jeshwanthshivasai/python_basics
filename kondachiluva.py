@@ -761,4 +761,32 @@ It's a special value meant to indicate the absence of a value)'''
 #     print("\nThe number is odd")
 #--------------------------------------------------------------------------------
 '''Introducing While Loops'''
-''''''
+'''The while loop in action'''
+currentnum = 0
+while currentnum <= 5:
+    print(currentnum)
+    currentnum += 1
+
+'''Using break to exit a loop'''
+# currentnum = 0
+# while currentnum < 10:
+#     currentnum += 1
+#     if currentnum % 2 == 0:
+#         break
+#     print(currentnum)
+    
+'''Using continue in a loop'''
+# currentnum = 0
+# while currentnum < 10:
+#     currentnum += 1
+#     if currentnum % 2 == 0:
+#         continue
+#     print(currentnum)
+
+'''Avoiding Infinite Loops'''
+'''AND FOR INFINITE LOOP REMOVE LAST LINE'''
+# x = 1
+# while x < 10:
+#     print(x)
+#     x += 1
+
