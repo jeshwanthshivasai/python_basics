@@ -762,10 +762,11 @@ It's a special value meant to indicate the absence of a value)'''
 #--------------------------------------------------------------------------------
 '''Introducing While Loops'''
 '''The while loop in action'''
-currentnum = 0
-while currentnum <= 5:
-    print(currentnum)
-    currentnum += 1
+# currentnum = 0
+# while currentnum <= 5:
+#     print(currentnum)
+#     currentnum 
+# += 1
 
 '''Using break to exit a loop'''
 # currentnum = 0
@@ -789,4 +790,39 @@ while currentnum <= 5:
 # while x < 10:
 #     print(x)
 #     x += 1
+#--------------------------------------------------------------------------------
+'''Using a while loop with lists and dictionaries'''
+'''Moving items from one list to another'''
+# unconfirmed_users = ['john', 'jacob', 'james']
+# confirmed_users = []
+# while unconfirmed_users:
+#     current_user = unconfirmed_users.pop()
+#     print(f"Verifying user: {current_user.title()}")
+#     confirmed_users.append(current_user)
+# print("\nThe following users are confirmed.")
+# for confirmed_user in confirmed_users:
+#     print(confirmed_user.title())
 
+'''Removing all instances of specific values from a list'''
+# pets = ['dog', 'cat', 'dog', 'fish', 'cat', 'rabbit', 'cat']
+# print(pets)
+# while 'cat' in pets:
+#     pets.remove('cat')
+# print(pets)
+
+'''Filling a dictionary with user input'''
+# responses = {}
+# active = True
+# while active:
+#     name = input("\nWhat's your name?")
+#     response = input("Whats your fav car?")
+#     responses[name] = response
+#     repeat = input("An another response? (Yes/No)")
+#     if repeat == 'No':
+#         active = False
+# print("\n---Poll Results---")
+# for name, response in responses.items():
+#     print(f"{name.title()} would like to buy a {response}")
+# ---------------------------------------------------------------------------------------------------------------
+'''CHAPTER - EIGHT (USER INPUT AND WHILE LOOPS)'''
+# ---------------------------------------------------------------------------------------------------------------
