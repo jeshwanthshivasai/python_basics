@@ -824,5 +824,25 @@ It's a special value meant to indicate the absence of a value)'''
 # for name, response in responses.items():
 #     print(f"{name.title()} would like to buy a {response}")
 # ---------------------------------------------------------------------------------------------------------------
-'''CHAPTER - EIGHT (USER INPUT AND WHILE LOOPS)'''
+'''CHAPTER - EIGHT (FUNCTIONS)'''
 # ---------------------------------------------------------------------------------------------------------------
+'''Defining a Function'''
+# def greet_user():
+#     print("Hello")
+# greet_user()
+
+'''Passing information to a function'''
+# def greet_user(username):
+#     print(f"Hello, {username.title()}")
+# greet_user('jesse')
+
+'''Arguments and parameters'''
+#username in greet_user() is "parameter"
+#jesse in greet_user('jesse') is an "argument"
+#--------------------------------------------------------------------------------
+'''Passing Arguments'''
+'''Positional Arguments'''
+def pet(type, name):
+    print(f"I have a {type}.")
+    print(f"My {type}'s name is {name.title()}.")
+pet('labrador', 'goldie')
