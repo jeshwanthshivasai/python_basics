@@ -842,7 +842,38 @@ It's a special value meant to indicate the absence of a value)'''
 #--------------------------------------------------------------------------------
 '''Passing Arguments'''
 '''Positional Arguments'''
-def pet(type, name):
-    print(f"I have a {type}.")
-    print(f"My {type}'s name is {name.title()}.")
-pet('labrador', 'goldie')
+# def pet(type, name):
+#     print(f"I have a {type}.")
+#     print(f"My {type}'s name is {name.title()}.")
+# pet('labrador', 'goldie')
+
+'''Multiple function cells'''
+# def pet(type, name):
+#     print(f"I have a {type}.")
+#     print(f"My {type}'s name is {name.title()}.")
+# pet('labrador', 'goldie')
+# pet('pomeranian', 'brownie')
+
+'''Keyword Arguments'''
+# def pet(type, name):
+#     print(f"I have a {type}.")
+#     print(f"My {type}'s name is {name.title()}.")
+# pet(type = 'labrador', name = 'goldie')
+# pet(name = 'brownie', type = 'pomeranian')
+
+'''Default Values'''
+# def pet(name, type = 'dog'):
+#     print(f"I have a {type}.")
+#     print(f"My {type}'s name is {name.title()}.")
+# pet('goldie')
+
+'''Avoiding argument errors'''
+# def pet(type, name):
+#     print(f"I have a {type}.")
+#     print(f"My {type}'s name is {name.title()}.")
+# pet()
+#--------------------------------------------------------------------------------
+'''Return_Values'''
+
+
+
