@@ -874,6 +874,64 @@ It's a special value meant to indicate the absence of a value)'''
 # pet()
 #--------------------------------------------------------------------------------
 '''Return_Values'''
+'''Returning a simple value'''
+# def fullname(firstname, lastname):
+#     fullname = f"{firstname} {lastname}"
+#     return fullname.title()
+# musician = fullname('Beaches', 'Beaches')
+# print(musician)
+# human = fullname('jeshwanth', 'shiva sai')
+# print(human)
 
+'''AND'''
 
+# def fullname(firstname, middlename, lastname):
+#     fullname = f"{firstname} {middlename} {lastname}"
+#     return fullname.title()
+# human = fullname('jeshwanth', 'shiva', 'sai')
+# print(human)
 
+'''Making an argument optional'''
+# def fullname(firstname, lastname, middlename=''):
+#     if middlename:
+#         fullname = f"{firstname} {middlename} {lastname}"
+#     else:
+#         fullname = f"{firstname} {lastname}"
+#     return fullname.title()
+# human = fullname('jeshwanth', 'sai')
+# print(human)
+# human = fullname('jeshwanth', 'sai', 'shiva')
+# print(human)
+
+'''Returning a dictionary'''
+# def person(firstname, lastname):
+#     person = {'first' : firstname, 'last' : lastname}
+#     return person
+# musician = person('the', 'weeknd')
+# print(musician)
+
+'''AND'''
+
+# def person(firstname, lastname, age=None):
+#     person = {'first' : firstname, 'last' : lastname}
+#     if age:
+#         person['age'] = age
+#     return person
+# musician = person('the', 'weeknd', age=32)
+# print(musician)
+
+'''Using a function with a while loop'''
+def fullname(firstname, lastname):
+    fullname = f"{firstname} {lastname}"
+    return fullname.title()
+print("\nEnter your name : ")
+print("(Enter 'q' to quit)")
+while True:
+    first = input('first name : ')
+    if first == 'q':
+        break
+    last = input('last name : ')
+    if last == 'q':
+        break
+    full_name = fullname(first, last)
+    print(f"\nHello, {full_name}.")
