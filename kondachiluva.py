@@ -921,17 +921,26 @@ It's a special value meant to indicate the absence of a value)'''
 # print(musician)
 
 '''Using a function with a while loop'''
-def fullname(firstname, lastname):
-    fullname = f"{firstname} {lastname}"
-    return fullname.title()
-print("\nEnter your name : ")
-print("(Enter 'q' to quit)")
-while True:
-    first = input('first name : ')
-    if first == 'q':
-        break
-    last = input('last name : ')
-    if last == 'q':
-        break
-    full_name = fullname(first, last)
-    print(f"\nHello, {full_name}.")
+# def fullname(firstname, lastname):
+#     fullname = f"{firstname} {lastname}"
+#     return fullname.title()
+# print("\nEnter your name : ")
+# print("(Enter 'q' to quit)")
+# while True:
+#     first = input('first name : ')
+#     if first == 'q':
+#         break
+#     last = input('last name : ')
+#     if last == 'q':
+#         break
+#     full_name = fullname(first, last)
+#     print(f"\nHello, {full_name}.")
+
+'''FROM FREE CODE CAMP - ITERATIONS (LOOPS IDIOMS)'''
+largest_value = 0
+print("before", largest_value)
+for number in [3, 67, 23, 51, 98,  100]:
+    if number > largest_value:
+        largest_value = number
+        print(largest_value, number)
+print("after", largest_value)
