@@ -935,12 +935,49 @@ It's a special value meant to indicate the absence of a value)'''
 #         break
 #     full_name = fullname(first, last)
 #     print(f"\nHello, {full_name}.")
-
+#----------------------------------------------------------------------------------------------------------------
 '''FROM FREE CODE CAMP - ITERATIONS (LOOPS IDIOMS)'''
-largest_value = 0
-print("before", largest_value)
-for number in [3, 67, 23, 51, 98,  100]:
-    if number > largest_value:
-        largest_value = number
-        print(largest_value, number)
-print("after", largest_value)
+# largest_value = 0
+# print("before", largest_value)
+# for number in [3, 67, 23, 51, 98,  100]:
+#     if number > largest_value:
+#         largest_value = number
+#         print(largest_value, number)
+# print("after", largest_value)
+'''FROM FREE CODE CAMP - ITERATIONS (LOOPS IDIOMS)'''
+#----------------------------------------------------------------------------------------------------------------
+'''Passing a list'''
+# def greet_users(names):
+#     for name in names:
+#         print(f"\nHello, {name.title()}!.")
+# usernames = ['jesse', 'james', 'oliver']
+# greet_users(usernames)
+
+'''Modifying a list in a function'''
+# uncooked_items = ['sambar', 'fryums', 'halwa']
+# cooked_items = []
+# while uncooked_items:
+#     current_item = uncooked_items.pop()
+#     print(f"\nFinished preparing : {current_item.title()}.")
+#     cooked_items.append(current_item)
+# print(f"\nFinished preparing the following items: ")
+# for item in cooked_items:
+#     print(item.title())
+
+'''AND (W/. functions)'''
+
+# def food(uncooked_items, cooked_items):
+#     while uncooked_items:
+#         current_item = uncooked_items.pop()
+#         print(f"\nFinished preparing : {current_item.title()}")
+#         cooked_items.append(current_item)
+# def show_items(cooked_items):
+#     print(f"\nFinished preparing the following items: ")
+#     for cooked_item in cooked_items:
+#         print(cooked_item.title())
+# uncooked_items = ['sambar', 'fryums', 'halwa']
+# cooked_items = []
+# food(uncooked_items, cooked_items)
+# show_items(cooked_items)
+#----------------------------------------------------------------------------------------------------------------
+'''Passing an Arbitrary Number of Arguments'''
