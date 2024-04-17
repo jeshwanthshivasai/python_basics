@@ -981,3 +981,32 @@ It's a special value meant to indicate the absence of a value)'''
 # show_items(cooked_items)
 #----------------------------------------------------------------------------------------------------------------
 '''Passing an Arbitrary Number of Arguments'''
+# def pizza(*toppings):
+#     print(toppings)
+# pizza('pepperoni', 'olives', 'pepperoni')
+
+'''AND'''
+
+# def pizza(*toppings):
+#     print(f"\nMaking your pizza with the following toppings : ")
+#     for topping in toppings:
+#         print(f"{topping}")
+# pizza('pepperoni', 'olives', 'pepperoni')
+
+'''Mixing positional and arbitrary arguments'''
+# def pizza(size, *toppings):
+#     print(f"\nMaking your {size} pizza with the following toppings: ")
+#     for topping in toppings:
+#         print(f"-{topping.title()}")
+# pizza(12, 'olives')
+# pizza(16, 'jalepeno', 'mushrooms', 'chicken')
+
+'''Using arbitrary keyword arguments'''
+# def profile(first_name, last_name, **user_info):
+#     user_info['first_name'] = first_name
+#     user_info['last_name'] = last_name
+#     return user_info
+# user_profile = profile('jeshwanth', 'shiva sai',
+#                        location = 'hyderabad',
+#                        education = 'B.Arch')
+# print(user_profile)
