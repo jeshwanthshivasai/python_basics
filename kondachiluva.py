@@ -1013,7 +1013,17 @@ It's a special value meant to indicate the absence of a value)'''
 #----------------------------------------------------------------------------------------------------------------
 '''Storing your functions in modules'''
 '''Importing an entire module'''
-def pizza(size, *toppings):
-    print(f"\nMaking your {size} pizza with the following toppings: ")
-    for topping in toppings:
-        print(f"-{topping.title()}")
+# def pizza(size, *toppings):
+#     print(f"\nMaking your {size} pizza with the following toppings: ")
+#     for topping in toppings:
+#         print(f"-{topping.title()}")
+
+'''Importing specific funtions'''
+'''Using as to give a function an alias'''
+'''Using as to give a module an alias'''
+'''Importing all functions in a module'''
+#----------------------------------------------------------------------------------------------------------------
+'''Styling functions'''
+# ---------------------------------------------------------------------------------------------------------------
+'''CHAPTER - NINE (CLASSES)'''
+# ---------------------------------------------------------------------------------------------------------------
