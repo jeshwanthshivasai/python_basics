@@ -1010,3 +1010,10 @@ It's a special value meant to indicate the absence of a value)'''
 #                        location = 'hyderabad',
 #                        education = 'B.Arch')
 # print(user_profile)
+#----------------------------------------------------------------------------------------------------------------
+'''Storing your functions in modules'''
+'''Importing an entire module'''
+def pizza(size, *toppings):
+    print(f"\nMaking your {size} pizza with the following toppings: ")
+    for topping in toppings:
+        print(f"-{topping.title()}")
