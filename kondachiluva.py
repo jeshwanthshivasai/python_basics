@@ -1029,14 +1029,119 @@ It's a special value meant to indicate the absence of a value)'''
 # ---------------------------------------------------------------------------------------------------------------
 '''Creating and Using a class'''
 '''Creating the class'''
-class Dog:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-    def sit(self):
-        print(f"{self.name} is now sitting.")
-    def roll_over(self):
-        print(f"{self.name} rolled over!")
-my_dog = Dog('Willie', 6)
-print(f"My dog name is {my_dog.name}.")
-print(f"My dog is {my_dog.age} years old.")
+# class Dog:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#     def sit(self):
+#         print(f"{self.name} is now sitting.")
+#     def roll_over(self):
+#         print(f"{self.name} rolled over!")
+# my_dog = Dog('Willie', 6)
+# print(f"My dog name is {my_dog.name}.")
+# print(f"My dog is {my_dog.age} years old.")
+#----------------------------------------------------------------------------------------------------------------
+'''Working with Classes and Instances'''
+'''Car class'''
+# class Car:
+#     def __init__(self, make, model, year):
+#         self.make=make
+#         self.model=model
+#         self.year=year
+#     def description(self):
+#         name=(f"I have a {self.year} {self.make} {self.model}.")
+#         return name
+# new_car=Car('Audi', 'A4', 2016)
+# print(new_car.description())
+
+'''Setting a default value for an attribute'''
+# class Car:
+#     def __init__(self, make, model, year):
+#         self.make=make
+#         self.model=model
+#         self.year=year
+#         self.odometer=0
+#     def description(self):
+#         name=(f"I have a {self.year} {self.make} {self.model}.")
+#         return name
+#     def read_odometer(self):
+#         print(f"This car has {self.odometer} kilometres on it.")
+# new_car=Car('Audi', 'A4', 2016)
+# print(new_car.description())
+# new_car.read_odometer()
+
+'''Modifying attribute values'''
+"""MODIFYING DIRECTLY"""
+# class Car:
+#     def __init__(self, make, model, year):
+#         self.make=make
+#         self.model=model
+#         self.year=year
+#         self.odometer=0
+#     def description(self):
+#         name=(f"I have a {self.year} {self.make} {self.model}.")
+#         return name
+#     def read_odometer(self):
+#         print(f"This car has {self.odometer} kilometres on it.")
+# new_car=Car('Audi', 'A4', 2016)
+# print(new_car.description())
+# new_car.odometer=22
+# new_car.read_odometer()
+
+"""MODIFYING THROUGH A METHOD"""
+# class Car:
+#     def __init__(self, make, model, year):
+#         self.make=make
+#         self.model=model
+#         self.year=year
+#         self.odometer=0
+#     def description(self):
+#         name=(f"I have a {self.year} {self.make} {self.model}.")
+#         return name
+#     def read_odometer(self):
+#         print(f"This car has {self.odometer} kilometres on it.")
+#     def update_odometer(self, mileage):
+#         self.odometer=mileage
+
+#         if mileage >= self.odometer:
+#             self.odometer=mileage
+#         else:
+#             print("Can't Rollback")
+
+# new_car=Car('Audi', 'A4', 2016)
+# print(new_car.description())
+# new_car.odometer=22
+# new_car.read_odometer()
+
+'''INCREMENT THROUGH A METHOD'''
+# class Car:
+#     def __init__(self, make, model, year):
+#         self.make=make
+#         self.model=model
+#         self.year=year
+#         self.odometer=0
+#     def description(self):
+#         name=(f"I have a {self.make} {self.model} {self.year}.")
+#         return name
+#     def read_odometer(self):
+#         print(f"This car has {self.odometer} kilometres on it.")
+#     def update_odometer(self, mileage):
+#         self.odometer=mileage
+
+#         if mileage>=self.odometer:
+#             self.odometer=mileage
+#         else:
+#             print("Can't Rollback")
+#     def increment_odometer(self, miles):
+#         self.odometer+=miles
+
+# used_car=Car('Audi', 'A4', 2014)
+# print(used_car.description())
+
+# used_car.update_odometer(23_500)
+# used_car.read_odometer()
+
+# used_car.increment_odometer(100)
+# used_car.read_odometer()
+#----------------------------------------------------------------------------------------------------------------
+'''Inheritance'''
