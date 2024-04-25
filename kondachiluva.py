@@ -1160,3 +1160,68 @@ It's a special value meant to indicate the absence of a value)'''
 #     print(key, val)
 '''FROM FREE CODE CAMP - TUPLES (COMPARING AND SORTING TUPLES)'''
 #----------------------------------------------------------------------------------------------------------------
+'''Inheritance'''
+'''The __init__ method for a child class'''
+# class Car:
+#     def __init__(self, make, model, year):
+#         self.make = make
+#         self.model = model
+#         self.year = year
+#         self.odometer_reading = 0
+#     def description(self):
+#         name = (f"I have a {self.make} {self.model} {self.year}.")
+#         return name
+#     def read_odometer(self):
+#         print(f"This car has {self.odometer} kilometres on it.")
+#     def update_odometer(self, mileage):
+#         self.odometer=mileage
+
+#         if mileage>=self.odometer:
+#             self.odometer=mileage
+#         else:
+#             print("Can't Rollback")
+#     def increment_odometer(self, miles):
+#         self.odometer+=miles
+
+# class ElectricalCar(Car):
+#     def __init__(self, make, model, year):
+#         super().__init__(make, model, year)
+
+# my_car = ElectricalCar('Nissan', 'GTR', 2019)
+# print(my_car.description())
+
+'''Defining your attributes and methods for the child class'''
+class Car:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.odometer_reading = 0
+    def description(self):
+        name = (f"I have a {self.make} {self.model} {self.year}.")
+        return name
+    def read_odometer(self):
+        print(f"This car has {self.odometer} kilometres on it.")
+    def update_odometer(self, mileage):
+        self.odometer=mileage
+
+        if mileage>=self.odometer:
+            self.odometer=mileage
+        else:
+            print("Can't Rollback")
+    def increment_odometer(self, miles):
+        self.odometer+=miles
+
+class ElectricalCar(Car):
+    def __init__(self, make, model, year):
+        super().__init__(make, model, year)
+        self.battery_size = 2000
+    def battery(self):
+        print(f"This car has {self.battery_size}Wh  battery capacity on it.")
+
+my_car = ElectricalCar('Nissan', 'GTR', 2019)
+print(my_car.description())
+my_car.battery()
+
+'''Instances as attributes'''
+
