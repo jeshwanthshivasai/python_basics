@@ -1191,6 +1191,39 @@ It's a special value meant to indicate the absence of a value)'''
 # print(my_car.description())
 
 '''Defining your attributes and methods for the child class'''
+# class Car:
+#     def __init__(self, make, model, year):
+#         self.make = make
+#         self.model = model
+#         self.year = year
+#         self.odometer_reading = 0
+#     def description(self):
+#         name = (f"I have a {self.make} {self.model} {self.year}.")
+#         return name
+#     def read_odometer(self):
+#         print(f"This car has {self.odometer} kilometres on it.")
+#     def update_odometer(self, mileage):
+#         self.odometer=mileage
+
+#         if mileage>=self.odometer:
+#             self.odometer=mileage
+#         else:
+#             print("Can't Rollback")
+#     def increment_odometer(self, miles):
+#         self.odometer+=miles
+
+# class ElectricalCar(Car):
+#     def __init__(self, make, model, year):
+#         super().__init__(make, model, year)
+#         self.battery_size = 2000
+#     def battery(self):
+#         print(f"This car has {self.battery_size}Wh  battery capacity on it.")
+
+# my_car = ElectricalCar('Nissan', 'GTR', 2019)
+# print(my_car.description())
+# my_car.battery()
+
+'''Instances as attributes'''
 class Car:
     def __init__(self, make, model, year):
         self.make = make
@@ -1212,16 +1245,25 @@ class Car:
     def increment_odometer(self, miles):
         self.odometer+=miles
 
+class Battery:
+    def __init__(self, battery_size=40):
+        self.battery_size = battery_size
+    def describe_battery(self):
+        print(f"This car has a {self.battery_size}-kWh battery.")
+    def get_range(self):
+        if self.battery_size == 40:
+            range = 150
+        elif self.battery_size == 65:
+            range = 225
+        print(f"This car can go about {range} kms on a full charge.")
+
 class ElectricalCar(Car):
     def __init__(self, make, model, year):
         super().__init__(make, model, year)
         self.battery_size = 2000
-    def battery(self):
-        print(f"This car has {self.battery_size}Wh  battery capacity on it.")
+        self.battery = Battery()
 
 my_car = ElectricalCar('Nissan', 'GTR', 2019)
 print(my_car.description())
-my_car.battery()
-
-'''Instances as attributes'''
-
+my_car.battery.describe_battery()
+my_car.battery.get_range()
