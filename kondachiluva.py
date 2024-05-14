@@ -1224,46 +1224,60 @@ It's a special value meant to indicate the absence of a value)'''
 # my_car.battery()
 
 '''Instances as attributes'''
-class Car:
-    def __init__(self, make, model, year):
-        self.make = make
-        self.model = model
-        self.year = year
-        self.odometer_reading = 0
-    def description(self):
-        name = (f"I have a {self.make} {self.model} {self.year}.")
-        return name
-    def read_odometer(self):
-        print(f"This car has {self.odometer} kilometres on it.")
-    def update_odometer(self, mileage):
-        self.odometer=mileage
+# class Car:
+#     def __init__(self, make, model, year):
+#         self.make = make
+#         self.model = model
+#         self.year = year
+#         self.odometer_reading = 0
+#     def description(self):
+#         name = (f"I have a {self.make} {self.model} {self.year}.")
+#         return name
+#     def read_odometer(self):
+#         print(f"This car has {self.odometer} kilometres on it.")
+#     def update_odometer(self, mileage):
+#         self.odometer=mileage
+#         if mileage>=self.odometer:
+#             self.odometer=mileage
+#         else:
+#             print("Can't Rollback")
+#     def increment_odometer(self, miles):
+#         self.odometer+=miles
 
-        if mileage>=self.odometer:
-            self.odometer=mileage
-        else:
-            print("Can't Rollback")
-    def increment_odometer(self, miles):
-        self.odometer+=miles
+# class Battery:
+#     def __init__(self, battery_size=40):
+#         self.battery_size = battery_size
+#     def describe_battery(self):
+#         print(f"This car has a {self.battery_size}-kWh battery.")
+#     def get_range(self):
+#         if self.battery_size == 40:
+#             range = 150
+#         elif self.battery_size == 65:
+#             range = 225
+#         print(f"This car can go about {range} kms on a full charge.")
 
-class Battery:
-    def __init__(self, battery_size=40):
-        self.battery_size = battery_size
-    def describe_battery(self):
-        print(f"This car has a {self.battery_size}-kWh battery.")
-    def get_range(self):
-        if self.battery_size == 40:
-            range = 150
-        elif self.battery_size == 65:
-            range = 225
-        print(f"This car can go about {range} kms on a full charge.")
+# class ElectricalCar(Car):
+#     def __init__(self, make, model, year):
+#         super().__init__(make, model, year)
+#         self.battery_size = 2000
+#         self.battery = Battery()
 
-class ElectricalCar(Car):
-    def __init__(self, make, model, year):
-        super().__init__(make, model, year)
-        self.battery_size = 2000
-        self.battery = Battery()
+# my_car = ElectricalCar('Nissan', 'GTR', 2019)
+# print(my_car.description())
+# my_car.battery.describe_battery()
+# my_car.battery.get_range()
 
-my_car = ElectricalCar('Nissan', 'GTR', 2019)
-print(my_car.description())
-my_car.battery.describe_battery()
-my_car.battery.get_range()
+'''Importing Classes'''
+#IMPORTING A SINGLE CLASS - from car import Car
+#STORING MULTIPLE CLASSES IN A MODULE - from car import ElectricCar
+#IMPORTING MULTIPLE CLASSES FROM A MODULE - from car import Car, ElectricCar
+#IMPORTING AN ENTIRE MODULE - import car
+#IMPORTING ALL CLASSES FROM A MODULE - from module_name import *
+#IMPORTING A MODULE INTO A MODULE - from car import Car
+                                   #from electric_car import ElectricCar
+
+'''Using Aliases'''
+#from electric_car import ElectricCar as EC
+# ---------------------------------------------------------------------------------------------------------------
+'''CHAPTER - TEN (FILES AND EXCEPTIONS)'''
+# ---------------------------------------------------------------------------------------------------------------
