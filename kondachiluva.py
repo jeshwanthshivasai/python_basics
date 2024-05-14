@@ -1280,7 +1280,8 @@ It's a special value meant to indicate the absence of a value)'''
 #from electric_car import ElectricCar as EC
 
 '''Python Standard Library'''
-from 
+from random import randint
+
 # ---------------------------------------------------------------------------------------------------------------
 '''CHAPTER - TEN (FILES AND EXCEPTIONS)'''
 # ---------------------------------------------------------------------------------------------------------------
