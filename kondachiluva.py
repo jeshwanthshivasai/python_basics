@@ -1280,8 +1280,14 @@ It's a special value meant to indicate the absence of a value)'''
 #from electric_car import ElectricCar as EC
 
 '''Python Standard Library'''
-from random import randint
+# from random import randint
+# num = randint(1, 6)
+# print(f"umm the number is {num}")
 
+from random import choice
+names = ['jess', 'schola', 'chitti', 'ramya']
+names = choice(names)
+print(f"{names}")
 # ---------------------------------------------------------------------------------------------------------------
 '''CHAPTER - TEN (FILES AND EXCEPTIONS)'''
 # ---------------------------------------------------------------------------------------------------------------
